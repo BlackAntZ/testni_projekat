@@ -1,0 +1,61 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: .5rem 2rem 1rem;
+  width: 100%;
+}
+
+.form > div {
+  width: 100%;
+  margin-bottom: .3rem;
+}
+
+.form label {
+  font-weight: 500;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  border: 2px solid var(--color-gray-150);
+  border-radius: .2rem;
+  padding: .2rem .5rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .5rem;
+  gap: .5rem;
+}
+
+.actions > button {
+  padding: .3rem 0;
+  width: 8rem;
+  border: 2px solid var(--color-gray-150);
+  border-radius: .3rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.actions > button:first-of-type {
+  background-color: var(--color-yellow-100);
+  border-color: var(--color-yellow-200);
+}
+
+.actions > button:first-of-type:hover {
+  background-color: var(--color-yellow-150);
+}
+
+.actions > button:last-of-type {
+  background-color: var(--color-green-100);
+  border-color: var(--color-green-200);
+}
+
+.actions > button:last-of-type:hover {
+  background-color: var(--color-green-150);
+}

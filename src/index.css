@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: black;
+  background-color: #cecece;
+
+  --color-gray-50: #dcdcdc;
+  --color-gray-100: #a4a4a4;
+  --color-gray-150: #888888;
+  --color-gray-200: #4f4f4f;
+  --color-gray-300: #3a3a3a;
+
+  --color-primary-100: #d6e7f1;
+  --color-primary-200: #95b8cc;
+
+  --color-green-100: #9dc493;
+  --color-green-150: #93c986;
+  --color-green-200: #879b82;
+
+  --color-red-100: #d7afaf;
+  --color-red-500: #6c2121;
+
+  --color-yellow-100: #e0d5b3;
+  --color-yellow-150: #e0cf9b;
+  --color-yellow-200: #9f9880;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-left: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > h1 {
+  text-align: center;
+  padding: .4rem 4rem .2rem;
+  border: 1px solid var(--color-gray-200);
+  width: fit-content;
+  border-radius: .5rem;
+  font-weight: 500;
+  background-color: white;
+  margin: 2rem 0 4rem;
+  font-size: 1.5rem;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(30, 30, 30, 0.2), rgba(30,30,30,0.3));
+  backdrop-filter: blur(5px);
+  z-index: 2;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
